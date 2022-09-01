@@ -1,0 +1,31 @@
+// Login
+"Login" = "Login";
+"Login_title" = "Cinnamon Template";
+
+// TabBar
+"TabBar_home" = "Home";
+"TabBar_account" = "Account";
+
+// UsersScreen
+"UsersScreen_title %d" = "We have %d users";
+
+// Account
+"Account_title" = "Authorized User";
+"Account_logout" = "Logout";
+
+// Common
+"Common_Email" = "Email";
+"Common_Password" = "Password";
+"Common_loading" = "Loading...";
+"Common_yes" = "Yes";
+"Common_cancel" = "Cancel";
+"Common_OK" = "OK";
+
+// Alerts
+"Alert_email_title" = "Email is not valid";
+"Alert_email_message" = "Please enter valid email";
+"Alert_password_title" = "Password is not valid";
+"Alert_password_message" = "Password should contain minimum eight characters, at least one upper case one lower case and a digit";
+"Alert_generic_title" = "Generic error";
+"Alert_email_message" = "Generic message";
+

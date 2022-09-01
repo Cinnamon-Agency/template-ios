@@ -1,0 +1,27 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+opt_in_rules:
+  - empty_count
+  - file_header
+  - explicit_init
+  - closure_spacing
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - private_outlet
+  - nimble_operator
+  - attributes
+  - operator_usage_whitespace
+  - first_where
+  - object_literal
+  - number_separator
+  - prohibited_super_call
+  - fatal_error_message
+  - vertical_parameter_alignment_on_call
+  - let_var_whitespace
+identifier_name:
+  excluded:
+    - id
+line_length: 196
+number_separator:
+  minimum_length: 5

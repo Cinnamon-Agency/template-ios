@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.MVVM.SwiftUI.App</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.apple.dt.unit.sceneLifecycleApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>NameOfInitialFileForEditor</key>
+	<string>RootView.swift</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>userInterface</string>
+			<key>Name</key>
+			<string>Interface:</string>
+			<key>Description</key>
+			<string>The type of user interface.</string>
+			<key>Units</key>
+			<dict>
+				<key>SwiftUI</key>
+				<array>
+					<dict>
+						<key>Nodes</key>
+						<array>
+
+							<string>../.gitignore</string>
+							<string>../.swiftlint.yml</string>
+							<string>Localizable.strings</string>
+
+
+							<string>Screens/Root/RootView.swift</string>
+							<string>Screens/Root/RootViewManager.swift</string>
+
+							<string>Screens/Login/LoginScreen.swift</string>
+							<string>Screens/Login/LoginService.swift</string>
+							<string>Screens/Login/LoginViewModel.swift</string>
+							<string>Screens/Login/Models/Network/LoginRequestParams.swift</string>
+
+							<string>Screens/TabBar/Home/Users/UsersScreen.swift</string>
+							<string>Screens/TabBar/Home/Users/UsersService.swift</string>
+							<string>Screens/TabBar/Home/Users/UsersViewModel.swift</string>
+							<string>Screens/TabBar/Home/Users/Models/Network/UserRequestParams.swift</string>
+							<string>Screens/TabBar/Home/Users/Models/User.swift</string>
+
+							<string>Screens/TabBar/Account/AccountScreen.swift</string>
+							<string>Screens/TabBar/Account/AccountViewModel.swift</string>
+
+							<string>Screens/TabBar/TabBar.swift</string>
+
+
+
+							<string>Utils/Authorization/AuthorizationToken.swift</string>
+							<string>Utils/Authorization/SessionManager/SessionManager.swift</string>
+							<string>Utils/Authorization/SessionManager/SessionManagerProvider.swift</string>
+
+							<string>Utils/Alert/AlertModel.swift</string>
+							<string>Utils/Alert/AlertContext.swift</string>
+							<string>Utils/Alert/AlertManager.swift</string>
+
+							<string>Utils/Extensions/ViewController+Ext.swift</string>
+							<string>Utils/Extensions/String+Ext.swift</string>
+							<string>Utils/Extensions/Result+Ext.swift</string>
+							<string>Utils/Extensions/Optional+Ext.swift</string>
+							<string>Utils/Extensions/View+Ext.swift</string>
+
+
+
+							<string>Views/Modifiers/OnFirstAppear.swift</string>
+							<string>Views/Modifiers/FontViewModifier.swift</string>
+							<string>Views/Styles/FontStyle/FontStyle.swift</string>
+							<string>Views/Styles/FontStyle/FontType.swift</string>
+							<string>Views/Styles/ButtonStyles.swift</string>
+							<string>Views/Styles/TextFieldStyles.swift</string>
+
+
+
+							<string>Models/Network/NetworkError.swift</string>
+
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>../.gitignore</key>
+							<dict>
+								<key>Group</key>
+								<string>Non-iOS Resource</string>
+								<key>Path</key>
+								<string>.gitignore</string>
+							</dict>
+
+							<key>../.swiftlint.yml</key>
+							<dict>
+								<key>Group</key>
+								<string>Non-iOS Resource</string>
+								<key>Path</key>
+								<string>.swiftlint.yml</string>
+							</dict>
+
+							<key>Localizable.strings</key>
+							<dict>
+								<key>Path</key>
+								<string>en.lproj/Localizable.strings</string>
+							</dict>
+
+
+
+
+
+
+
+							<key>Screens/Root/RootView.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Root</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Root/RootView.swift</string>
+							</dict>
+
+							<key>Screens/Root/RootViewManager.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Root</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Root/RootViewManager.swift</string>
+							</dict>
+
+
+							<key>Screens/Login/LoginService.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Login</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Login/LoginService.swift</string>
+							</dict>
+
+							<key>Screens/Login/LoginScreen.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Login</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Login/LoginScreen.swift</string>
+							</dict>
+
+							<key>Screens/Login/LoginViewModel.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Login</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Login/LoginViewModel.swift</string>
+							</dict>
+
+							<key>Screens/Login/Models/Network/LoginRequestParams.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>Login</string>
+									<string>Models</string>
+									<string>Network</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/Login/Models/Network/LoginRequestParams.swift</string>
+							</dict>
+
+
+							<key>Screens/TabBar/Home/Users/UsersScreen.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/UsersScreen.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Home/Users/UsersService.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/UsersService.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Home/Users/UsersViewModel.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/UsersViewModel.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Home/Users/Models/Network/UserRequestParams.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+									<string>Models</string>
+									<string>Network</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/Models/Network/UserRequestParams.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Home/Users/Models/User.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+									<string>Models</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/Models/User.swift</string>
+							</dict>
+
+
+							<key>Screens/TabBar/Account/AccountScreen.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Account</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Account/AccountScreen.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Account/AccountViewModel.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Account</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Account/AccountViewModel.swift</string>
+							</dict>
+
+
+							<key>Screens/TabBar/TabBar.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/TabBar.swift</string>
+							</dict>
+
+
+
+
+
+							<key>Utils/Authorization/AuthorizationToken.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Authorization</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Authorization/AuthorizationToken.swift</string>
+							</dict>
+
+							<key>Utils/Authorization/SessionManager/SessionManager.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Authorization</string>
+									<string>SessionManager</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Authorization/SessionManager/SessionManager.swift</string>
+							</dict>
+
+							<key>Utils/Authorization/SessionManager/SessionManagerProvider.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Authorization</string>
+									<string>SessionManager</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Authorization/SessionManager/SessionManagerProvider.swift</string>
+							</dict>
+
+
+							<key>Utils/Alert/AlertModel.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Alert</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Alert/AlertModel.swift</string>
+							</dict>
+
+							<key>Utils/Alert/AlertContext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Alert</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Alert/AlertContext.swift</string>
+							</dict>
+
+							<key>Utils/Alert/AlertManager.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Alert</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Alert/AlertManager.swift</string>
+							</dict>
+
+
+							<key>Utils/Extensions/ViewController+Ext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Extensions</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Extensions/ViewController+Ext.swift</string>
+							</dict>
+
+							<key>Utils/Extensions/String+Ext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Extensions</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Extensions/String+Ext.swift</string>
+							</dict>
+
+							<key>Utils/Extensions/Result+Ext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Extensions</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Extensions/Result+Ext.swift</string>
+							</dict>
+
+							<key>Utils/Extensions/Optional+Ext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Extensions</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Extensions/Optional+Ext.swift</string>
+							</dict>
+
+							<key>Utils/Extensions/View+Ext.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Extensions</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Extensions/View+Ext.swift</string>
+							</dict>
+
+
+
+
+
+							<key>Views/Modifiers/OnFirstAppear.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Modifiers</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Modifiers/OnFirstAppear.swift</string>
+							</dict>
+
+							<key>Views/Modifiers/FontViewModifier.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Modifiers</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Modifiers/FontViewModifier.swift</string>
+							</dict>
+
+							<key>Views/Styles/FontStyle/FontStyle.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Styles</string>
+									<string>FontStyle</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Styles/FontStyle/FontStyle.swift</string>
+							</dict>
+
+							<key>Views/Styles/FontStyle/FontType.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Styles</string>
+									<string>FontStyle</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Styles/FontStyle/FontType.swift</string>
+							</dict>
+
+							<key>Views/Styles/ButtonStyles.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Styles</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Styles/ButtonStyles.swift</string>
+							</dict>
+
+							<key>Views/Styles/TextFieldStyles.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+									<string>Styles</string>
+								</array>
+								<key>Path</key>
+								<string>Views/Styles/TextFieldStyles.swift</string>
+							</dict>
+
+
+
+
+
+							<key>Models/Network/NetworkError.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Models</string>
+									<string>Network</string>
+								</array>
+								<key>Path</key>
+								<string>Models/Network/NetworkError.swift</string>
+							</dict>
+
+
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Type</key>
+			<string>popup</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<array>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>Storyboard</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>ViewController.swift:comments</string>
+							<string>ViewController.swift:imports:importCocoa</string>
+							<string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController)</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+							<string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+							<string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+							<string>Base.lproj/Main.storyboard</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>Base.lproj/Main.storyboard</key>
+							<dict>
+								<key>Path</key>
+								<string>Main.storyboard</string>
+								<key>SortOrder</key>
+								<integer>98</integer>
+							</dict>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>INFOPLIST_KEY_UIMainStoryboardFile</key>
+									<string>Main</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>Preview Content/Preview Assets.xcassets</string>
+							<string>SceneDelegate.swift:imports:importSwiftUI</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body:windowScene</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>
+// Create the SwiftUI view that provides the window contents.
+let rootView = RootView()
+</string>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body:windowScene</key>
+							<string>
+// Use a UIHostingController as window root view controller.
+if let windowScene = scene as? UIWindowScene {
+    let window = UIWindow(windowScene: windowScene)
+    window.rootViewController = UIHostingController(rootView: rootView)
+    self.window = window
+    window.makeKeyAndVisible()
+}</string>
+							<key>*:imports:importSwiftUI</key>
+							<string>import SwiftUI</string>
+						</dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>ENABLE_PREVIEWS</key>
+									<string>YES</string>
+									<key>DEVELOPMENT_ASSET_PATHS</key>
+									<string>___PACKAGENAMEPREVIEWCONTENT:quoteIfNeeded___</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>userInterface</key>
+							<string>SwiftUI</string>
+							<key>coreData</key>
+							<string>true</string>
+							<key>appLifecycle</key>
+							<string>Cocoa</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</string>
+						</array>
+						<key>Definitions</key>
+						<dict>
+							<key>SceneDelegate.swift:implementation:methods:sceneWillConnectToSession:body</key>
+							<string>
+// Get the managed object context from the shared persistent container.
+let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
+// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+let rootView = RootView().environment(\.managedObjectContext, context)
+</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Image</key>
+	<dict>
+		<key>BundleImageName</key>
+		<string>app</string>
+		<key>BundleIdentifier</key>
+		<string>com.apple.dt.IDEKit</string>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>ShellScript</key>
+					<string></string>
+					<key>ShellPath</key>
+					<string></string>
+					<key>Name</key>
+					<string>Add packages</string>
+					<key>Class</key>
+					<string>ShellScript</string>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>Name</key>
+					<string>Swift Lint</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string>if which swiftlint &gt;/dev/null; then
+  swiftlint
+else
+  echo &quot;warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint&quot;
+fi
+</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
