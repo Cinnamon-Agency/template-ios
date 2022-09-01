@@ -1,0 +1,82 @@
+# OS X
+.DS_Store
+.Trashes
+*.swp
+*.lock
+
+# Xcode
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*~.nib
+*.moved-aside
+*.xcuserstate
+
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# other SCC directories
+.hg
+.svn
+CVS
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
+# CocoaPods
+#
+Pods/
+!Pods/Manifest.lock
+!Podfile.lock
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+#Carthage/Checkouts
+#Carthage/Build
+
+# Ruby
+!Gemfile.lock
+
+# fastlane
+#
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/*/*.png
+fastlane/screenshots/screenshots.html
+fastlane/test_output
+
+# R.swift -- tool for resource reference generation
+R.generated.swift
+
+# Jazzy -- tool for documentation generation
+docs/undocumented.json
+docs/docsets/
