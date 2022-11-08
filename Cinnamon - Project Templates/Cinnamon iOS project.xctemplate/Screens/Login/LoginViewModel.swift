@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+@MainActor
 final class LoginViewModel: ObservableObject {
     enum ValidationError: Error {
         case invalidEmail
