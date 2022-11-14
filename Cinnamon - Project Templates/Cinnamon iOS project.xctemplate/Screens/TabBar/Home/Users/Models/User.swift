@@ -8,6 +8,14 @@ struct User: Codable, Identifiable {
     let email: String?
     let gender: String?
     let status: String?
+
+    public init(id: Int? = nil, name: String? = nil, email: String? = nil, gender: String? = "male", status: String? = "active") {
+        self.id = id
+        self.name = name
+        self.email = email
+        self.gender = gender
+        self.status = status
+    }
 }
 
 extension User {

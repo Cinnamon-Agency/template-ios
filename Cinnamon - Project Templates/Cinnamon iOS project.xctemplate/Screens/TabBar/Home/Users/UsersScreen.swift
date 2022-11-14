@@ -10,26 +10,37 @@ struct UsersScreen: View {
             VStack {
                 switch viewModel.state {
                 case .loading:
-                    ProgressView(LocalizedStringKey("Common_loading"))
+                    progressView
                 case .loaded, .error:
                     userList
                 default:
                     EmptyView()
                 }
             }
-            .modifier(
-                OnFirstAppear {
-                    Task {
-                        await viewModel.getUsers()
-                    }
-                }
-            )
         }
         .navigationViewStyle(.stack)
+        .onFirstAppear {
+            Task {
+                await viewModel.getUsers()
+            }
+        }
     }
 }
 
+// MARK: - Views
 private extension UsersScreen {
+    var progressView: some View {
+        ProgressView(LocalizedStringKey("Common_loading"))
+    }
+
+    var addUserButton: some View {
+        NavigationLink(destination: AddUserScreen(), label: {
+            Image(systemName: "plus.circle.fill")
+                .font(.title)
+                .foregroundColor(.blue)
+        })
+    }
+
     var userList: some View {
         List {
             ForEach(viewModel.users, id: \.id) { user in
@@ -38,6 +49,9 @@ private extension UsersScreen {
             }
         }
         .navigationTitle(viewModel.navigationTitle)
+        .toolbar {
+            addUserButton
+        }
     }
 }
 

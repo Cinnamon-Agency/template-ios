@@ -3,14 +3,7 @@
 import SwiftUI
 
 final class UsersViewModel: ObservableObject {
-    enum State {
-        case notActive
-        case loading
-        case loaded
-        case error
-    }
-
-    @Published private (set) var state: State = .notActive
+    @Published private (set) var state: LoadingState = .notActive
     @Published private (set) var users: [User] = []
 
     private let userService: UserServiceProvider
@@ -33,12 +26,12 @@ final class UsersViewModel: ObservableObject {
         self.state = .loading
 
         do {
-            users = try await userService.fetch()
+            users = try await userService.fetch().data
             self.state = .loaded
-        } catch _ {
+        } catch let error {
             self.state = .error
 
-            AlertManager.presentAlert(alert: AlertContext.genericError)
+            print(error)
         }
     }
 }

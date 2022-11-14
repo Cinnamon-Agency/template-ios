@@ -19,7 +19,7 @@ struct AuthorizationToken: Codable {
 extension AuthorizationResponse {
     static let mock = AuthorizationResponse(
         token: AuthorizationToken(
-            value: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+            value: "a920ee00ea1be178115dde1fd20bc987c37239c60d42da5afd62260d53619a20",
             expiresIn: 86_400)
     )
 }
