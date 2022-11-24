@@ -17,19 +17,14 @@ struct BuildConfiguration {
 
     var baseURL: String {
         switch environmentConfiguration {
-        case .debugDevelopment, .releaseDevelopment:
-            return "https://gorest.co.in/public/v1"
-        case .debugProduction, .releaseProduction:
-
-            // TODO add prod version
+        case .debugDevelopment, .releaseDevelopment, .debugProduction, .releaseProduction:
             return "https://gorest.co.in/public/v1"
         }
     }
 
+    // TODO we are following this for adding build configurations
+    // https://sarunw.com/posts/how-to-set-up-ios-environments/#assign-current-configuration-to-info.plist
     init() {
-//        let currentConfiguration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String
-//        environmentConfiguration = Config(rawValue: currentConfiguration!)!
-
         environmentConfiguration = .debugDevelopment
     }
 }
