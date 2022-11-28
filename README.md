@@ -1,5 +1,5 @@
 # Cinnamon iOS project Template
-<img src="https://img.shields.io/badge/Version-1.0.0-blue"/>
+<img src="https://img.shields.io/badge/Version-1.1.0-blue"/>
 
 ## **Table of Contents**
 
@@ -46,7 +46,7 @@ Project template should be visible here when creating new project `(Cmd+Shift+N)
 
 
 ## **⚠️ Make sure to** <a name="make-sure"></a>
-- add [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) package to your project!
+- add [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) and [Cinamofryer](https://github.com/Cinnamon-Agency/Cinamofryer) packages to your project.  
 Easiest way to add dependencies is with the Swift Package Manager:
 https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app
 - install [SwiftLint](https://github.com/realm/SwiftLint) if you want to enforce the style guide rules that are generally accepted by the Swift community
