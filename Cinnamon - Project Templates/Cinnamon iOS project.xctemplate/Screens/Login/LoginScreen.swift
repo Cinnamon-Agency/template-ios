@@ -13,18 +13,31 @@ struct LoginScreen: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
-            Text(LocalizedStringKey("Login_title"))
-                .fontStyle(Verdana.bold28)
+            titleView
+            formView
+            loginButton
+            hintView
+        }
+        .padding()
+    }
+}
 
+// MARK: - Views
+extension LoginScreen {
+    var titleView: some View {
+        Text(LocalizedStringKey("Login_title"))
+            .fontStyle(Verdana.bold28)
+    }
+
+    var formView: some View {
+        Group {
             TextField(LocalizedStringKey("Common_Email"), text: $viewModel.email)
                 .autocapitalization(.none)
-                .textFieldStyle(RoundedTextFieldStyle())
                 .focused($focusedField, equals: .email)
                 .submitLabel(.next)
                 .onSubmit { focusedField = .password }
 
             SecureField(LocalizedStringKey("Common_Password"), text: $viewModel.password)
-                .textFieldStyle(RoundedTextFieldStyle())
                 .focused($focusedField, equals: .password)
                 .submitLabel(.go)
                 .onSubmit {
@@ -32,17 +45,27 @@ struct LoginScreen: View {
                         await viewModel.onLoginButtonTap()
                     }
                 }
+        }
+        .textFieldStyle(RoundedTextFieldStyle())
+    }
 
-            Button {
+    var loginButton: some View {
+        RoundedButton(
+            title: String(localized: "Login"),
+            loading: viewModel.state == .loading,
+            action: {
                 Task {
                     await viewModel.onLoginButtonTap()
                 }
-            } label: {
-                Text(LocalizedStringKey("Login"))
             }
-            .buttonStyle(BlueButtonStyle())
-        }
-        .padding()
+        )
+    }
+
+    var hintView: some View {
+        Text(LocalizedStringKey("Login_hint"))
+            .foregroundColor(.secondary)
+            .fontStyle(Verdana.regular16)
+            .padding(.top, 16)
     }
 }
 

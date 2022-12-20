@@ -7,21 +7,27 @@ struct AccountScreen: View {
 
     var body: some View {
         VStack {
-            Spacer()
-
-            Text(LocalizedStringKey("Account_title"))
-                .fontStyle(Verdana.bold28)
-
-            Button {
-                viewModel.logout()
-            } label: {
-                Text(LocalizedStringKey("Account_logout"))
-            }
-            .buttonStyle(BlueButtonStyle())
-
-            Spacer()
+            titleView
+            logoutButton
         }
         .padding()
+    }
+}
+
+// MARK: - Views
+extension AccountScreen {
+    var titleView: some View {
+        Text(LocalizedStringKey("Account_title"))
+            .fontStyle(Verdana.bold28)
+    }
+
+    var logoutButton: some View {
+        RoundedButton(
+            title: String(localized: "Account_logout"),
+            action: {
+                viewModel.logout()
+            }
+        )
     }
 }
 

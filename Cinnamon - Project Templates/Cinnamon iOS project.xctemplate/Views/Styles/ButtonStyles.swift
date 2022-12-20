@@ -11,5 +11,6 @@ struct BlueButtonStyle: ButtonStyle {
             .frame(minWidth: 0, maxWidth: .infinity)
             .background(Color.blue)
             .cornerRadius(12)
+            .opacity(configuration.isPressed ? 0.5 : 1)
     }
 }

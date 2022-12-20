@@ -55,6 +55,9 @@
 							<string>Screens/TabBar/Home/Users/Models/Network/UserRequestParams.swift</string>
 							<string>Screens/TabBar/Home/Users/Models/User.swift</string>
 
+							<string>Screens/TabBar/Home/Users/AddUser/AddUserScreen.swift</string>
+							<string>Screens/TabBar/Home/Users/AddUser/AddUserViewModel.swift</string>
+
 							<string>Screens/TabBar/Account/AccountScreen.swift</string>
 							<string>Screens/TabBar/Account/AccountViewModel.swift</string>
 
@@ -77,6 +80,13 @@
 							<string>Utils/Extensions/View+Ext.swift</string>
 
 
+							<string>Utils/Environment/ConnectivityManager.swift</string>
+							<string>Utils/Environment/BuildConfiguration.swift</string>
+
+
+							<string>Utils/Networking/Models/ApiResponse.swift</string>
+							<string>Utils/Networking/Models/Endpoints.swift</string>
+
 
 							<string>Views/Modifiers/OnFirstAppear.swift</string>
 							<string>Views/Modifiers/FontViewModifier.swift</string>
@@ -84,10 +94,12 @@
 							<string>Views/Styles/FontStyle/FontType.swift</string>
 							<string>Views/Styles/ButtonStyles.swift</string>
 							<string>Views/Styles/TextFieldStyles.swift</string>
+							<string>Views/RoundedButton.swift</string>
 
 
 
 							<string>Models/Network/NetworkError.swift</string>
+							<string>Models/Enums/LoadingState.swift</string>
 
 						</array>
 						<key>Definitions</key>
@@ -258,6 +270,34 @@
 								<string>Screens/TabBar/Home/Users/Models/User.swift</string>
 							</dict>
 
+							<key>Screens/TabBar/Home/Users/AddUser/AddUserScreen.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+									<string>AddUser</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/AddUser/AddUserScreen.swift</string>
+							</dict>
+
+							<key>Screens/TabBar/Home/Users/AddUser/AddUserViewModel.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Screens</string>
+									<string>TabBar</string>
+									<string>Home</string>
+									<string>Users</string>
+									<string>AddUser</string>
+								</array>
+								<key>Path</key>
+								<string>Screens/TabBar/Home/Users/AddUser/AddUserViewModel.swift</string>
+							</dict>
+
 
 							<key>Screens/TabBar/Account/AccountScreen.swift</key>
 							<dict>
@@ -426,6 +466,52 @@
 
 
 
+							<key>Utils/Environment/ConnectivityManager.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Environment</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Environment/ConnectivityManager.swift</string>
+							</dict>
+
+							<key>Utils/Environment/BuildConfiguration.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Environment</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Environment/BuildConfiguration.swift</string>
+							</dict>
+
+
+							<key>Utils/Networking/Models/ApiResponse.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Networking</string>
+									<string>Models</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Networking/Models/ApiResponse.swift</string>
+							</dict>
+
+							<key>Utils/Networking/Models/Endpoints.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Utils</string>
+									<string>Networking</string>
+									<string>Models</string>
+								</array>
+								<key>Path</key>
+								<string>Utils/Networking/Models/Endpoints.swift</string>
+							</dict>
 
 
 							<key>Views/Modifiers/OnFirstAppear.swift</key>
@@ -498,6 +584,16 @@
 
 
 
+							<key>Views/RoundedButton.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Views</string>
+								</array>
+								<key>Path</key>
+								<string>Views/RoundedButton.swift</string>
+							</dict>
+
 
 
 							<key>Models/Network/NetworkError.swift</key>
@@ -509,6 +605,18 @@
 								</array>
 								<key>Path</key>
 								<string>Models/Network/NetworkError.swift</string>
+							</dict>
+
+
+							<key>Models/Enums/LoadingState.swift</key>
+							<dict>
+								<key>Group</key>
+								<array>
+									<string>Models</string>
+									<string>Enums</string>
+								</array>
+								<key>Path</key>
+								<string>Models/Enums/LoadingState.swift</string>
 							</dict>
 
 

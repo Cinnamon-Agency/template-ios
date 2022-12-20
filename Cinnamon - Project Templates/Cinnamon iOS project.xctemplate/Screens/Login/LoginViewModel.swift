@@ -12,6 +12,7 @@ final class LoginViewModel: ObservableObject {
     private let sessionManager: SessionManagerProvider
     private let loginService: LoginServiceProvider
 
+    @Published private (set) var state: LoadingState = .notActive
     @Published var email: String = ""
     @Published var password: String = ""
 
@@ -32,13 +33,17 @@ final class LoginViewModel: ObservableObject {
     }
 
     private func login() async {
+        state = .loading
         do {
             let authorizationResponse = try await loginService.login(LoginRequestParams(email: email, password: password))
 
             sessionManager.login(token: authorizationResponse.token.value)
+            state = .loaded
         } catch let error as NetworkError {
+            state = .error
             handleError(error)
         } catch {
+            state = .error
             AlertManager.presentAlert(alert: AlertContext.genericError)
         }
     }
